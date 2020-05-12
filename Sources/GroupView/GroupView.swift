@@ -31,7 +31,7 @@ open class GroupView: UIView {
         }
         
         self.addSubview(view)
-        view.fills
+        view.fillSuperview()
     }
 }
 #endif
