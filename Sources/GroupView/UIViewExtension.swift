@@ -16,12 +16,12 @@ extension UIView{
     }
     
     func fillSuperview(){
-        view.translatesAutoresizingMaskIntoConstraints = false
+        self.translatesAutoresizingMaskIntoConstraints = false
 
-        let trailingAnchor = view.trailingAnchor.constraint(equalTo: self.superview!.trailingAnchor)
-        let leadingAnchor = view.leadingAnchor.constraint(equalTo: self.superview!.leadingAnchor)
-        let topAnchor = view.topAnchor.constraint(equalTo: self.superview!.topAnchor)
-        let bottomAnchor = view.bottomAnchor.constraint(equalTo: self.superview!.bottomAnchor)
+        let trailingAnchor = self.trailingAnchor.constraint(equalTo: self.superview!.trailingAnchor)
+        let leadingAnchor = self.leadingAnchor.constraint(equalTo: self.superview!.leadingAnchor)
+        let topAnchor = self.topAnchor.constraint(equalTo: self.superview!.topAnchor)
+        let bottomAnchor = self.bottomAnchor.constraint(equalTo: self.superview!.bottomAnchor)
 
         NSLayoutConstraint.activate([trailingAnchor, leadingAnchor, topAnchor, bottomAnchor])
     }
